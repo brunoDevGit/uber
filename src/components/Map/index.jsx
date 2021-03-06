@@ -12,7 +12,7 @@ export default class Map extends Component {
     navigator.geolocation.getCurrentPosition(
       ({ coords: { latitude, longitude } }) => {
         this.setState({
-          region: {
+          region: { 
             latitude,
             longitude,
             latitudeDelta: 0.0143,
